@@ -1,0 +1,112 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 1rem;
+  transform: translateZ(0);
+}
+.loader div {
+  width: 1rem;
+  height: 1rem;
+  background-color: #222222;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.loader div:nth-child(1) {
+  position: relative;
+  left: 2rem;
+  transform: scale(0);
+  -webkit-animation: appear 0.65s infinite;
+          animation: appear 0.65s infinite;
+}
+.loader div:nth-child(2), .loader div:nth-child(3) {
+  -webkit-animation: move 0.65s infinite;
+          animation: move 0.65s infinite;
+}
+.loader div:nth-child(4) {
+  -webkit-animation: fade 0.65s infinite;
+          animation: fade 0.65s infinite;
+}
+
+@-webkit-keyframes appear {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fade {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes fade {
+  to {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes move {
+  to {
+    transform: translateX(2rem);
+  }
+}
+@keyframes move {
+  to {
+    transform: translateX(2rem);
+  }
+}
+body.dark {
+  background-color: black;
+  color: white;
+}
+body.dark a {
+  color: white;
+}
+
+nav {
+  font-family: "Iceland", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+.change-theme {
+  cursor: pointer;
+}
+
+.main {
+  display: none;
+}
+
+.change-theme {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */
