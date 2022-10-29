@@ -1,3 +1,3 @@
 # Surgeped
 
-Frontend for a Surgeped
+Frontend for Surgeped

@@ -70,8 +70,122 @@ body.dark a {
   color: white;
 }
 
-nav {
+header {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   font-family: "Iceland", cursive;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: 1px solid black;
+}
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+}
+header .content a {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.services {
+  padding: 7.5rem;
+}
+.services h1 {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 300;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.services h1::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  width: 160.5px;
+  height: 95px;
+  background: url(../images/heading-shape.svg) no-repeat center center/cover;
+  z-index: -1;
+}
+.services .service {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin: 7.5rem 0;
+  height: 25rem;
+  position: relative;
+}
+.services .service .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services .service .content h2 {
+  font-size: 30px;
+  font-weight: 300;
+  border-bottom: 2px solid yellow;
+  padding: 1rem 2rem;
+}
+.services .service .content p {
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 37px;
+  text-align: center;
+}
+.services .service .arrow {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+}
+.services .more {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 15rem auto;
+  border: 1px solid black;
+  padding: 0.5rem 2.5rem;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.web-development .vector {
+  background: url(../images/web-development.svg) no-repeat center center/cover;
+}
+
+.branding .vector {
+  background: url(../images/branding.svg) no-repeat center center/cover;
+}
+
+.b2b .vector {
+  background: url(../images/b2b.svg) no-repeat center center/cover;
 }
 
 * {
