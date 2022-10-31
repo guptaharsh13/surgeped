@@ -1,0 +1,91 @@
+footer {
+  background-color: rgba(0, 0, 0, 0.86);
+  color: white;
+  position: relative;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 5rem 7.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 3rem 7.5rem;
+    padding-top: 0;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 300;
+      color: #ffe23e;
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 1rem;
+
+      li a {
+        font-size: 22px;
+        font-weight: 200;
+        color: white;
+      }
+    }
+
+    .contact-us ul li {
+      &:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .navigate-to ul {
+      gap: 2rem;
+    }
+
+    .social-links {
+      position: relative;
+      .icons {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+  > p {
+    font-family: "Gilda Display", serif;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    padding: 2.5rem;
+  }
+
+  .talk {
+    position: absolute;
+    bottom: 8.5rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 9.5rem;
+    font-family: "Iceland", cursive;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}

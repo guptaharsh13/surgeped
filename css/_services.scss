@@ -58,7 +58,8 @@
   .more {
     display: block;
     width: fit-content;
-    margin: 15rem auto;
+    margin: auto;
+    margin-top: 15rem;
     border: 1px solid black;
     padding: 0.5rem 2.5rem;
     font-size: 28px;
@@ -67,13 +68,13 @@
 }
 
 .web-development .vector {
-  background: url(../images/web-development.svg) no-repeat center center/cover;
+  background: url(../images/web-development.svg) no-repeat center center/contain;
 }
 
 .branding .vector {
-  background: url(../images/branding.svg) no-repeat center center/cover;
+  background: url(../images/branding.svg) no-repeat center center/contain;
 }
 
 .b2b .vector {
-  background: url(../images/b2b.svg) no-repeat center center/cover;
+  background: url(../images/b2b.svg) no-repeat center center/contain;
 }

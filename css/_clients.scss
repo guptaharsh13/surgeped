@@ -1,0 +1,55 @@
+.our-clients {
+  h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 0.5rem;
+    border: 2px solid yellow;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .clients {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem;
+  }
+
+  .line {
+    width: max(35%, 15rem);
+    height: 2px;
+    background-color: black;
+    margin: auto;
+  }
+
+  .banner {
+    background-color: #151414;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0;
+    padding: 5rem;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .number {
+        font-family: "Inter", sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        color: #ffe23e;
+      }
+
+      p {
+        font-size: 26px;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid white;
+        color: white;
+      }
+    }
+  }
+}

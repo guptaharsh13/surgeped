@@ -1,0 +1,38 @@
+.about {
+  h1 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 15px;
+      width: 160.5px;
+      height: 95px;
+      background: url(../images/heading-shape.svg) no-repeat center center/cover;
+      z-index: -1;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    margin: 5rem;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 100;
+      line-height: 197.52%;
+    }
+  }
+}
