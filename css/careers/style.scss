@@ -1,0 +1,43 @@
+@import "loader";
+@import "nav";
+@import "hero";
+@import "roles";
+@import "domains";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+.change-theme {
+  cursor: pointer;
+}
+
+.main {
+  display: none;
+}
+
+.change-theme {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

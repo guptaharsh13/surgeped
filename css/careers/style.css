@@ -1,0 +1,340 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 1rem;
+  transform: translateZ(0);
+}
+.loader div {
+  width: 1rem;
+  height: 1rem;
+  background-color: #222222;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.loader div:nth-child(1) {
+  position: relative;
+  left: 2rem;
+  transform: scale(0);
+  -webkit-animation: appear 0.65s infinite;
+          animation: appear 0.65s infinite;
+}
+.loader div:nth-child(2), .loader div:nth-child(3) {
+  -webkit-animation: move 0.65s infinite;
+          animation: move 0.65s infinite;
+}
+.loader div:nth-child(4) {
+  -webkit-animation: fade 0.65s infinite;
+          animation: fade 0.65s infinite;
+}
+
+@-webkit-keyframes appear {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fade {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes fade {
+  to {
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes move {
+  to {
+    transform: translateX(2rem);
+  }
+}
+@keyframes move {
+  to {
+    transform: translateX(2rem);
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Iceland", cursive;
+}
+nav ul {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+}
+
+.hero {
+  margin: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hero .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+.hero .tabs .tab {
+  padding: 1rem 3rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.hero .tabs .tab:nth-child(1) {
+  background-color: #2f6f79;
+}
+.hero .tabs .tab:nth-child(2) {
+  background-color: #388393;
+}
+.hero p {
+  margin: 2rem;
+}
+.hero p span {
+  color: #81ca2d;
+}
+.hero p:nth-child(3), .hero p:nth-child(5) {
+  font-size: 20px;
+  font-weight: 400;
+}
+.hero p:nth-child(6) {
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+  width: 55%;
+}
+.hero .line {
+  width: max(35%, 15rem);
+  height: 1px;
+  background-color: black;
+}
+
+.roles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 0 19.5rem;
+  -moz-column-gap: 9.5rem;
+       column-gap: 9.5rem;
+  row-gap: 5rem;
+}
+.roles .role {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.roles .role h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.roles .role p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.domains-section .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+.domains-section .tabs .tab {
+  padding: 0.5rem 5rem;
+  border-radius: 1.5rem;
+  background-color: darkslategray;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #d9d9d9;
+  color: white;
+  cursor: pointer;
+}
+.domains-section .tabs .tab:nth-child(2) {
+  background-color: #f4e9e9;
+  z-index: -1;
+  position: relative;
+  right: 2rem;
+}
+.domains-section .domains .domain {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-items: center;
+}
+.domains-section .domains .domain:nth-child(2) .content .availability {
+  background-color: #619426;
+}
+.domains-section .domains .domain .content {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.domains-section .domains .domain .content h2,
+.domains-section .domains .domain .content .availability {
+  font-size: 24px;
+  font-weight: 300;
+}
+.domains-section .domains .domain .content .availability {
+  padding: 0.25rem 3.5rem;
+  background-color: #80cc28;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1.5rem;
+}
+.domains-section .domains .domain .content .text {
+  font-size: 20px;
+  font-weight: 300;
+}
+.domains-section .domains .domain .content .text p:first-child {
+  margin-bottom: 2rem;
+}
+.domains-section .domains .domain .content .text ul {
+  padding-left: 2.5rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.86);
+  color: white;
+  position: relative;
+}
+footer h2 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5rem 7.5rem;
+  padding-bottom: 1.5rem;
+}
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 3rem 7.5rem;
+  padding-top: 0;
+}
+footer .content h1 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffe23e;
+  margin-bottom: 3rem;
+}
+footer .content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+footer .content ul li a {
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+}
+footer .content .contact-us ul li:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .content .contact-us ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .content .navigate-to ul {
+  gap: 2rem;
+}
+footer .content .social-links {
+  position: relative;
+}
+footer .content .social-links .icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+footer > p {
+  font-family: "Gilda Display", serif;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 400;
+  padding: 2.5rem;
+}
+footer .talk {
+  position: absolute;
+  bottom: 8.5rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 9.5rem;
+  font-family: "Iceland", cursive;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+.change-theme {
+  cursor: pointer;
+}
+
+.main {
+  display: none;
+}
+
+.change-theme {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */
